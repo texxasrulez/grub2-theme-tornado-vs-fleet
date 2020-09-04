@@ -1,0 +1,78 @@
+# GRUB2 gfxmenu Tornado vs the Fleet theme.
+#
+# Created by texxasrulez
+
+# Global Property
+title-text: ""
+title-font: "DejaVu Sans Mono 22"
+title-color: "#ffffff"
+message-font: "DejaVu Sans Mono 22"
+message-color: "#ffffff"
+message-bg-color: "#f2f2f2"
+desktop-image: "background.png"
+desktop-color: "#000000"
+terminal-box: "term_bkg_*.png"
+terminal-font: "DejaVu Sans Mono 22"
+
+
+
+# Show the boot menu
++ boot_menu {
+		left = 1%
+		width = 40%
+		top = 36%
+		height = 50%
+		item_font = "FreeSans Regular 22"
+		selected_item_font = "FreeSans Bold 22"
+		item_color = "#ffffff"
+		selected_item_color = "#c3d4e1"
+		icon_width = 48
+		icon_height = 48
+		item_icon_space = 20
+		item_height = 50
+		item_padding = 5
+		item_spacing = 10
+		selected_item_pixmap_style= "select_bkg_*.png"
+		menu_pixmap_style = "menu_bkg_*.png"
+		scrollbar = false
+		scrollbar_width = 10
+		scrollbar_thumb = "sb_thumb_*.png"
+		scrollbar_frame = "sb_frame_*.png"
+}
+
++ image {
+		top = 32%
+		left = 3%
+		width = 401
+		height = 43
+		file = "title.png"
+}
+
+# Show GRUB Commands.
++ hbox {
+		top = 90%
+		left = 28%
+		+ label {text = "Up/Dn ↑ ↓: " font = "FreeSans Regular 22" color = "#ffffff" align = "left"}
+		+ label {text = "Selection Option     " font = "FreeSans Regular 20" color = "#1692d0" align = "left"}
+		+ label {text = "Enter: " font = "FreeSans Regular 22" color = "#ffffff" align = "left"}
+		+ label {text = "Boot Selection     " font = "FreeSans Regular 20" color = "#1692d0" align = "left"}
+		+ label {text = "e: " font = "FreeSans Regular 22" color = "#ffffff" align = "left"}
+		+ label {text = "Edit Selection     " font = "FreeSans Regular 20" color = "#1692d0" align = "left"}
+		+ label {text = "c: " font = "FreeSans Regular 22" color = "#ffffff" align = "left"}
+		+ label {text = "GRUB Commandline" font = "FreeSans Regular 20" color = "#1692d0" align = "left"}
+}
+
+# Show a styled horizontal progress bar
++ progress_bar {
+		id = "__timeout__"
+		left = 2%
+		width = 38%
+		top = 85%
+		height = 40
+		show_text = true
+		font = "DejaVu Sans Mono 8"
+		text_color = "#1692d0"
+		text = "Booting in %d seconds"
+		bar_style = "progress_bar_*.png"
+		highlight_style = "progress_highlight_*.png"
+}
