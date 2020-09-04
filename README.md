@@ -8,7 +8,7 @@
 
 ### Included Icons ###  
 
-| OS - Menu Item & Logo																		| OS - Menu Item & Logo																		| OS - Menu Item & Logo																				|
+| OS / Menu Item and Logo	to Display						| OS / Menu Item and Logo	to Display						| OS / Menu Item and Logo	to Display								|
 |:---																						|:---																						|:---																								|
 | Alt Linux <img src="/tornado-vs-fleet/icons/altlinux.png" width="64" height="64">			| Haiku <img src="/tornado-vs-fleet/icons/haiku.png" width="64" height="64">				| Refind <img src="/tornado-vs-fleet/icons/refind.png" width="64" height="64">						|
 | Android <img src="/tornado-vs-fleet/icons/android.png" width="64" height="64">			| Hardware Test <img src="/tornado-vs-fleet/icons/hwtest.png" width="64" height="64">		| RemixOS <img src="/tornado-vs-fleet/icons/remixos.png" width="64" height="64">					|
